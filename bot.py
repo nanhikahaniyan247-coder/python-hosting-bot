@@ -3,7 +3,7 @@ from process_manager import start_process, stop_process, is_running
 from keep_alive import keep_alive
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-OWNER_ID = 7381777230   # <-- নিজের Telegram ID
+OWNER_ID = 7381777230
 
 bot = telebot.TeleBot(BOT_TOKEN)
 UPLOAD = "uploads"
