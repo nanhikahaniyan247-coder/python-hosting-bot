@@ -11,7 +11,7 @@ def save(d):
         json.dump(d,f,indent=2)
 
 def start_process(file):
-    p = subprocess.Popen(["python3", file])
+    p = subprocess.Popen(["python", file])
     d = load()
     d[file] = p.pid
     save(d)
